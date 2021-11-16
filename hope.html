@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Brushing</title>
+</head>
+<style>
+#btn{
+    padding: 10px 14px;
+    color: rgb(250, 6, 87);
+    border: 3px solid black;
+    color: rgb(49, 209, 57);
+    font-weight: bold;
+}
+</style>
+<body>
+    <div id="container">
+    <h2>Hello Javascript</h2>
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis facilis expedita tempore, sit doloremque dolore ipsam. Nobis quod ex a animi consectetur, porro eius minus. Fugiat ea minus accusamus id dicta atque nesciunt consequuntur quaerat, dolorem harum iste laborum laboriosam ipsum, assumenda magnam voluptas. Exercitationem harum deserunt tempora at, fugit aut. Nobis, repudiandae in. Quia rem vero quas doloribus suscipit voluptates soluta et iure hic obcaecati sint delectus, veniam debitis atque porro aperiam! Nesciunt aliquam optio deleniti magni necessitatibus qui molestias provident culpa unde, dolore distinctio, explicabo aut fugit amet rem, perspiciatis quod non quos dolores eius eaque sequi numquam? Repudiandae iste alias neque non maxime veritatis officiis dicta corrupti. Libero aliquid qui soluta error reiciendis saepe praesentium amet alias distinctio quo. Totam fugit aut vitae odit ex voluptates quidem magni saepe, debitis vero, possimus natus aliquid dicta dolorem quas ducimus veritatis incidunt recusandae. Provident quisquam quasi deleniti vero consequuntur consectetur sapiente pariatur recusandae! Quaerat, ex illo ullam doloribus mollitia quibusdam qui sapiente saepe odio dignissimos nostrum earum quae voluptatum architecto nulla beatae? Facere animi sed asperiores temporibus. Blanditiis labore aut cum consequuntur quia ullam sit non, repellat nemo facilis! Perspiciatis itaque dolor rerum voluptatum? Vero, illum dolores, id labore praesentium atque explicabo eius, repudiandae voluptatum nisi veniam tempora voluptas laborum vitae sint! Vero perferendis obcaecati quas cupiditate voluptas officia libero excepturi, numquam omnis repellat nobis, rerum adipisci qui, et odit similique tempore?
+    </p>     </div>
+    <button id= "btn" onclick="toggleHide()">Show/Hide</button>
+<script>
+    function toggleHide(){
+        let  btn = document.getElementById("btn");
+        let  para = document.getElementById("para");
+        if(para.style.display != 'none'){
+        para.style.display = 'none';
+        }
+        else{
+            para.style.display = 'block';
+            btn.tabIndex=3
+        }
+    }   
+</script>
+</body> 
+</html>
